@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://dctie5y3syj1c"]
+[gd_scene load_steps=5 format=3 uid="uid://dctie5y3syj1c"]
 
 [ext_resource type="Texture2D" uid="uid://b6qtyyt18r6fj" path="res://player/player.png" id="1_oul6g"]
 [ext_resource type="Script" uid="uid://d1ffur86c1so8" path="res://player/player.gd" id="1_rkbax"]
+
+[sub_resource type="Animation" id="Animation_rkbax"]
+resource_name = "stand_right"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g1dw6"]
+_data = {
+&"stand_right": SubResource("Animation_rkbax")
+}
 
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
@@ -10,3 +18,8 @@ script = ExtResource("1_rkbax")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_oul6g")
 hframes = 60
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_g1dw6")
+}
