@@ -183,11 +183,11 @@ animation = &"run_down"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_rkbax"]
 blend_point_0/node = SubResource("AnimationNodeAnimation_rkbax")
-blend_point_0/pos = Vector2(-1, 0)
+blend_point_0/pos = Vector2(-0.9, 0)
 blend_point_1/node = SubResource("AnimationNodeAnimation_boad6")
 blend_point_1/pos = Vector2(0, 1)
 blend_point_2/node = SubResource("AnimationNodeAnimation_rgyib")
-blend_point_2/pos = Vector2(1, 0)
+blend_point_2/pos = Vector2(0.9, 0)
 blend_point_3/node = SubResource("AnimationNodeAnimation_hg6s5")
 blend_point_3/pos = Vector2(0, -1)
 blend_mode = 1
@@ -269,5 +269,5 @@ libraries = {
 tree_root = SubResource("AnimationNodeBlendTree_rkbax")
 advance_expression_base_node = NodePath("..")
 anim_player = NodePath("../AnimationPlayer")
-parameters/StateMachine/MoveState/RunState/blend_position = Vector2(0.0844353, -0.643478)
+parameters/StateMachine/MoveState/RunState/blend_position = Vector2(-0.414681, 0.384615)
 parameters/StateMachine/MoveState/StandState/blend_position = Vector2(-0.00667304, 0.682692)
